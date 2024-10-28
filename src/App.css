@@ -1,38 +1,122 @@
-.App {
+/* App.css */
+
+body {
+  background-color: #ffffff; /* Light gray background */
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.app {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff; /* White background for the app container */
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
   text-align: center;
+  color: #FF6A00; /* McLaren orange */
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  background-color: #FF6A00; /* McLaren orange */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:hover {
+  background-color: #E65C00; /* Darker shade for hover effect */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:focus, textarea:focus {
+  border-color: #FF6A00; /* Highlight border color on focus */
+  box-shadow: 0 0 5px rgba(255, 106, 0, 0.5); /* Glow effect on focus */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.book-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.book-item {
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #fafafa; /* Light background for book items */
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.book-item:hover {
+  background-color: #f1f1f1; /* Slightly darker on hover */
+}
+
+.book-actions {
+  display: flex;
+  gap: 10px; /* Space between action buttons */
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* App.css */
+
+.book-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.book-table th, .book-table td {
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  text-align: left;
+}
+
+.book-table th {
+  background-color: #FF6A00; /* McLaren orange for header */
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.book-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light gray for even rows */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.book-table tr:hover {
+  background-color: #f1f1f1; /* Slightly darker on hover */
+}
+
+.book-actions {
+  display: flex;
+  gap: 10px; /* Space between action buttons */
 }
